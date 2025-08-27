@@ -31,7 +31,6 @@
 *.lib
 
 # Executables
-younghun/*.exe
 *.exe
 *.out
 *.app
@@ -208,15 +207,18 @@ poetry.toml
 pyrightconfig.json
 
 ### VisualStudioCode ###
+# this is my option
 .vscode/
-# .vscode
-# .vscode/tasks.json
-# .vscode/launch.json
+## .vscode
+## .vscode/tasks.json
+## .vscode/launch.json
 
-# .vscode/*
-# add */.vscode/* because subdirectory
-# */.vscode/*
+## .vscode/*
+## add */.vscode/* because subdirectory
+## */.vscode/*
 
+# initial settings
+# .vscode/
 # !.vscode/settings.json
 # !.vscode/tasks.json
 # !.vscode/launch.json
