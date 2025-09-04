@@ -31,11 +31,21 @@ int main(){
     float f;
 
     // 제대로 작동 안함 왜지? vs에서는 잘 작동함
-    cout << typeid(v).name() << endl; // void * __ptr64
-    cout << typeid(i).name() << endl; // int
-    cout << typeid(l).name() << endl; // long
-    cout << typeid(d).name() << endl; // double
-    cout << typeid(f).name() << endl; // float
+    cout << typeid(v).name() << endl; 
+    // void * __ptr64  -> Pv
+    cout << typeid(i).name() << endl; 
+    // int  ->  i
+    cout << typeid(l).name() << endl; 
+    // long  ->  l
+    cout << typeid(d).name() << endl; 
+    // double  ->  d
+    cout << typeid(f).name() << endl; 
+    // float  ->  f
+    // 왜 이런 차이?
+    // compiler차이로 인한 출력 변경
+    // Visual Studio의 기본 컴파일러는 MSVC
+    // 현재 컴파일러는 MinGW-w64(GCC for Windows)
+    // MSVC는 풀네임, GCC는 축약/맹글링 된 이름(Pv-void*, i-int 등)
 
     int a = 5;
     cout << "a: " << a << ' ' << typeid(a).name() << ' ' << sizeof(int) << "바이트" << endl;
