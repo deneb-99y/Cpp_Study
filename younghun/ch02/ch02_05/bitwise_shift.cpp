@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    int a = 13;
+    int a = -13;
     int b = a >> 1;
     int c = a << 1;
 
@@ -15,9 +15,9 @@ int main(){
     // warning C4293: '<<': 시프트 횟수가 음수이거나 너무 큽니다. 정의되지 않은 동작입니다.
     // int e = a << 32;
 
-    cout << "a = " << bitset<8>(a) << " : " << a << endl;
-    cout << "b = " << bitset<8>(b) << " : " << b << endl;
-    cout << "c = " << bitset<8>(c) << " : " << c << endl;
+    cout << "a = " << bitset<32>(a) << " : " << a << endl;
+    cout << "b = " << bitset<32>(b) << " : " << b << endl;
+    cout << "c = " << bitset<32>(c) << " : " << c << endl;
     // cout << "d = " << bitset<8>(d) << " : " << d << endl;
     // cout << "e = " << bitset<8>(e) << " : " << e << endl;
 

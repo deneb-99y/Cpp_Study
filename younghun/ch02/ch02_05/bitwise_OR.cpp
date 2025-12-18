@@ -3,13 +3,13 @@
 using namespace std;
 
 int main(){
-    int a = 13;
+    int a = -13;
     int b = 27;
     int c = a | b;
 
-    cout << "a = " << bitset<8>(a) << " : " << a << endl;
-    cout << "b = " << bitset<8>(b) << " : " << b << endl;
-    cout << "c = " << bitset<8>(c) << " : " << c << endl;
+    cout << "a = " << bitset<33>(a) << " : " << a << endl;
+    cout << "b = " << bitset<33>(b) << " : " << b << endl;
+    cout << "c = " << bitset<33>(c) << " : " << c << endl;
 
     return 0;
 }
